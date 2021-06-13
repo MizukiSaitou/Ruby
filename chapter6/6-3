@@ -1,0 +1,22 @@
+menu = {"コーヒー"=> 300, "カフェラテ=> 400}
+menu.each do |k , v|
+puts "#{k}は#{v}円です"
+end
+
+menu = {"コーヒー"=> 300, "カフェラテ"=> 400}
+menu.each do |k , v|
+puts "#{k}は#{v}円です" if v > 350
+end
+
+menu = {}
+menu.each do |k , v|
+puts "#{k}は#{v}円です"
+end
+
+menu = {"コーヒー" => 300, "カフェラテ" => 400}
+keys = []
+menu.each do |key,value|
+keys.push(key)
+end
+p keys
+

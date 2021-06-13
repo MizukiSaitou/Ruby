@@ -1,0 +1,15 @@
+a = [1,2,3]
+a.map do |b|
+puts b * 3
+end
+
+i = ["abc","xyz"]
+i.map do |text|
+puts text.reverse
+end
+
+result = ["aya","achi","Tama"].map do |x|
+x.downcase
+end
+result = result.sort
+puts result

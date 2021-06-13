@@ -1,0 +1,12 @@
+def order(item)
+"#{item}をください"
+end
+
+puts order("カフェラテ")
+puts order("モカ")
+
+
+def dice
+[1,2,3,4,5,6].sample
+end
+

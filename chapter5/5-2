@@ -1,0 +1,5 @@
+drinks = ["モカ","カフェラテ","モカ"]
+puts drinks.uniq
+
+drinks = ["モカ","カフェラテ","モカ"]
+puts drinks.clear
