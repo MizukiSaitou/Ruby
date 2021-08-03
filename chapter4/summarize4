@@ -1,0 +1,40 @@
+p ["コーヒー", "カフェラテ"]
+
+drinks = ["コーヒー", "カフェラテ", "モカ"]
+p drinks
+p drinks[1]
+p drinks[0]
+p drinks[2]
+p drinks.first
+p drinks.last
+
+drink_plus = ["コーヒー", "カフェラテ"]
+drink_plus.push("モカ")
+p drink_plus
+drink_plus << "ティーラテ"
+p drink_plus
+
+number = [2 ,3]
+number.unshift(1)
+p number
+
+number1 = [1,2]
+number2 = [3,4]
+p number1 + number2
+
+drinks = ["ティーラテ", "カフェラテ", "抹茶ラテ"]
+drinks.each do |drink|
+  puts drink
+end
+drinks.each do |drink|
+ puts drink + "でお願いします"
+end
+
+numbers = [1, 2, 3]
+sum = 0
+numbers.each do |number|
+ sum = sum + number
+end
+puts sum 
+puts numbers.sum
+
