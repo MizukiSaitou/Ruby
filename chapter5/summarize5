@@ -1,0 +1,41 @@
+drinks = ["コーヒー", "カフェラテ"]
+p drinks.size
+
+number = [1, 2, 3, 4, 5]
+p number.sum
+
+drinks2 = ["モカ", "カフェラテ", "モカ"]
+p drinks2.uniq
+p drinks2.clear
+
+drinks3 = ["カフェラテ", "モカ", "カプチーノ"]
+p drinks3.sample
+
+omikuzi = ["大吉", "中吉", "末吉", "凶"]
+p omikuzi.sample
+
+numbers2 = [100, 50, 300]
+p numbers2.sort
+p numbers2.sort.reverse
+
+p "cba".reverse
+
+numbers3 = ["100", "50", "300"]
+p numbers3.join(",")
+
+p "100,50,300".split(",")
+
+result = [1, 2, 3].map do |x|
+  x * 3
+end
+p result
+
+result2 = ["abc", "xyz"].map do |y|
+  y.reverse
+end
+p result2
+
+results3 = ["aya", "achi", "Tama"].map do |z|
+  z.downcase
+end
+p results3.sort
