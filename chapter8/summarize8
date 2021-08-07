@@ -1,0 +1,101 @@
+a = {:coffee => 300, :caffe_latte => 400}
+p a.class
+
+p Hash.new
+
+class CaffeLatte
+end
+
+caffe_latte = CaffeLatte.new
+p caffe_latte.class
+
+
+class Item
+  def name
+    "チーズケーキ"
+  end
+end
+
+item = Item.new
+p item.name
+
+
+class Item
+  def name=(text)
+    @name = text
+  end
+
+  def name
+    @name
+  end
+end
+
+item = Item.new
+item.name = "チーズケーキ"
+p item.name
+
+
+class Item
+  def initialize
+   puts "商品を扱うオブジェクト"
+  end
+end
+
+Item.new
+
+
+class Item
+  def initialize(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+end
+
+item1 = Item.new("マフィン")
+item2 = Item.new("スコーン")
+
+p item1.name
+p item2.name
+
+
+class Drink
+  def todays_special
+    name
+  end
+
+  def name
+    "ホワイトモカ"
+  end
+end
+
+drink = Drink.new
+p drink.name
+
+class Drink
+  def self.todays_special
+    "ホワイトモカ"
+  end
+end
+
+p Drink.todays_special
+
+
+class Item
+  def name
+    @name
+  end
+
+  def name=(text)
+    @name = text
+  end
+end
+
+class Food < Item
+end
+
+food = Food.new
+food.name = "チーズケーキ"
+p food.name
