@@ -102,3 +102,28 @@ sum = 0
 end
 puts sum
 
+# 配列の要素件数の出力と要素の合計値
+puts ["コーヒー", "カフェラテ"].size
+puts [1, 2, 3, 4, 5].sum
+
+# おみくじのプログラムを書く（大吉、中吉、末吉、凶）
+puts ["大吉", "中吉", "末吉", "凶"].sample
+
+# orderメソッド
+def order
+  "カフェラテください"
+end
+puts order
+
+# 戻り値3のareaメソッド
+def area(n)
+  n * n
+end
+puts area(3)
+
+# サイコロを振って出た目を戻り値とするdiceメソッド
+def dice
+  [1, 2, 3, 4, 5, 6].sample
+end
+puts dice
+
